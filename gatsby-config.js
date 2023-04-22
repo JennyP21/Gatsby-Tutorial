@@ -10,15 +10,7 @@
 
 module.exports = {
   plugins: [
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        // The unique name for each instance
-        name: `notes`,
-        // Path to the directory
-        path: `${__dirname}/src/notes/`,
-      },
-    },
+    "gatsby-transformer-remark",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
