@@ -8,7 +8,17 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        // The unique name for each instance
+        name: `notes`,
+        // Path to the directory
+        path: `${__dirname}/src/notes/`,
+      },
+    },
+  ],
   siteMetadata: {
     title: "Web Warrios",
     description: "web dev portfolio",
