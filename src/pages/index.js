@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/Layout"
-import * as styles from '../styles/home.module.css'
-import { Link } from "gatsby"
+import React from "react";
+import Layout from "../components/Layout";
+import * as styles from "../styles/home.module.css";
+import { Link } from "gatsby";
 
 export default function Home() {
   return (
@@ -11,9 +11,12 @@ export default function Home() {
           <h2>Design</h2>
           <h3>Develop & Deploy</h3>
           <p>UX designer & web developer basd in Vancouver.</p>
-          <Link className={styles.btn} to="/projects">My Portfolio Projects</Link>
+          <Link className={styles.btn} to="/projects">
+            My Portfolio Projects
+          </Link>
         </div>
+        <img src="/banner.png" alt="site banner" style={{ maxWidth: "100%" }} />
       </section>
     </Layout>
-  )
+  );
 }
