@@ -9,4 +9,9 @@
  */
 module.exports = {
   plugins: [],
-}
+  siteMetadata: {
+    title: "Web Warrios",
+    description: "web dev portfolio",
+    copyright: "This website is copyright 2021 Web Warrior",
+  },
+};
