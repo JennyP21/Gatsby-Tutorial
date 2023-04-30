@@ -29,7 +29,7 @@ export default function Projects({ data }) {
 }
 
 export const query = graphql`
-  query ProjectsQuery {
+  query ProjectsDetails {
     projects: allMarkdownRemark(sort: { frontmatter: { date: DESC } }) {
       nodes {
         frontmatter {
