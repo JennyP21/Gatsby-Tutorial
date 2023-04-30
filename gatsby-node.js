@@ -17,7 +17,7 @@ exports.createPages = async ({ graphql, actions }) => {
     actions.createPage({
       path: `/projects/${node.frontmatter.slug}`,
       component: path.resolve("./src/templates/project-details.js"),
-      content: { slug: node.frontmatter.slug },
+      context: { slug: node.frontmatter.slug },
     });
   });
 };

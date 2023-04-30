@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Img from "gatsby-image";
-import styles from "../styles/project-details.module.css";
+import * as styles from "../styles/project-details.module.css";
 
 export default function ProjectDetails() {
   return (
